@@ -1,0 +1,112 @@
+body {
+  background-color: #f7f7f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.map-view {
+  height: 100vh;
+}
+
+#svg2 {
+  margin-left: 200px;
+  margin-right: -200px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+path {
+  fill: #b3b3b3;
+}
+
+path:hover {
+  fill: #dc3545;
+  cursor: pointer;
+}
+
+/* Fix so that different paths are highlight simultaneously */
+#g3843:hover path, #g3834:hover path, #g3829:hover path, #g3839:hover path {
+  fill: #dc3545;
+}
+
+.center {
+  text-align: center;
+}
+
+.headers {
+  padding-top: 50px;
+}
+.headers h1 {
+  font-size: 2.9rem;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-container div p {
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: bold;
+  flex: 0 0 150px;
+}
+
+.card-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+.card-danger .card-header {
+  background-color: #bd2130;
+}
+
+/* Styling for mobile */
+@media (max-width: 992px) {
+  .precaution-icon {
+    max-width: 50%;
+    margin-left: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .desktop-space {
+    margin-top: 30px;
+  }
+}
+.hover:hover {
+  cursor: pointer;
+}
+
+.dot-container {
+  display: block;
+}
+.dot-container div span {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  border-radius: 100%;
+}
+.dot-container div p {
+  display: inline-block;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.dot-red {
+  background-color: #dc3545;
+}
+
+.dot-green {
+  background-color: #28a745;
+}
+
+#svg_arrow {
+  transform: rotate(90deg);
+}
+
+.infection-index {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

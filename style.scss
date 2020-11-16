@@ -1,0 +1,129 @@
+$red: #dc3545;
+$green: #28a745;
+$yellow: #ffc107;
+$primary: #007bff;
+$secondary: #6c757d;
+
+body {
+    background-color: rgb(247, 247, 247);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.map-view {
+    height: 100vh;
+    //overflow: hidden;
+}
+
+#svg2 {
+    margin-left: 200px;
+    margin-right: -200px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+path {
+    fill: #b3b3b3;
+}
+
+path:hover {
+    fill: $red;
+    cursor: pointer;
+}
+
+/* Fix so that different paths are highlight simultaneously */
+#g3843:hover, #g3834:hover, #g3829:hover, #g3839:hover {
+    path {
+        fill: $red;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.headers {
+    padding-top: 50px;
+
+    h1 {
+        font-size: 2.9rem;
+    }
+}
+
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        p {
+            margin-bottom: 0;
+            font-size: 17px;
+            font-weight: bold;
+            flex: 0 0 150px;
+        }
+    }
+}
+
+
+.card-danger {
+    background-color: $red;
+    color: #fff;
+
+    .card-header {
+        background-color: darken($red, 10);
+    }
+}
+
+/* Styling for mobile */
+@media (max-width: 992px) {
+    .precaution-icon {
+        max-width: 50%;
+        margin-left: 35%;
+    }
+}
+
+@media (min-width: 992px) {
+    .desktop-space {
+        margin-top: 30px;
+    }
+}
+
+.hover:hover {
+    cursor: pointer;
+}
+
+
+.dot-container {
+    display: block;
+
+    div {
+        span {
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+            border-radius: 100%;
+        }
+
+        p {
+            display: inline-block;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.dot-red {background-color: $red;}
+.dot-green{background-color: $green;}
+
+
+#svg_arrow {
+    transform: rotate(90deg);
+}
+
+.infection-index {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-top: 20px;
+}
